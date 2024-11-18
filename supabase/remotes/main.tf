@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    supabase = {
+      source  = "supabase/supabase"
+      version = "~> 0.1" # Specify the version based on the provider version you need
+    }
+  }
+}
+
 provider "supabase" {
   access_token = var.supabase_access_token
   project_id   = var.supabase_project_id
